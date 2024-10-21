@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* -- Seurat Font -- */
+@font-face {
+ font-family: myFirstFont;
+ src: url("fonts/FOT-Seurat Pro DB.otf");
+}
+
+* {
+ font-family: myFirstFont;
+}
+
+
+/* Set BG Color To Pink */
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color:darkslateblue;
+}
+
+p {
+  color:lightcyan;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4CAF50;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #45a049;
+} 
+
+
+div.sticky {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  padding: 1em;
+  background-color: #cae8e7;
+/*  border: 2px solid #50b0aa;*/
+  z-index: +999;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+
+div.relative {
+/*  position: relative;*/
+/*  left: 30px;*/
+/*  margin-left: 30px;*/
+  padding: 30px;
+  border: 3px solid #2196ad;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div.relative-transparent {
+    padding: 30px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    background-color: transparent;
+  }
+
+.relative p {
+
+  color: #110055;
+  font-size: 1.25em;
+
+}
+
+.roundedImage {
+  border-radius: 15px;
+/*  max-width: 300px;*/
+/*  max-height: 300px;*/
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+
+
+/* Background Shape Related */
+
+canvas { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+}
+
+
+/* Animation stuff */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* flexbox stuff */
+.flex-row {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  background-color: transparent;
+  gap:20px;
+}
+
+.flex-row-end {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: flex-end;
+  background-color: transparent;
+  gap:20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: transparent;
+  gap:20px;
+}
+
+/* chat effect (also using flexbox) */
+.chat-like {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-like div {
+  max-width: 90%;
+}
+
+.chat-like div:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-like div:nth-child(even) {
+  align-self: flex-end;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
