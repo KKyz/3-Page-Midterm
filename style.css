@@ -53,6 +53,19 @@ p {
   background-color: #45a049;
 } 
 
+.select-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #616161;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
 
 div.sticky {
   position: sticky;
@@ -171,20 +184,6 @@ canvas {
 
 .chat-like div {
   max-width: 90%;
-}
-
-.chat-like div:nth-child(odd) {
-  align-self: flex-start;
-  margin-left: 20px;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.chat-like div:nth-child(even) {
-  align-self: flex-end;
-  margin-right: 20px;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 
